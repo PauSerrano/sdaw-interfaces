@@ -1,0 +1,128 @@
+:root{
+/* --prussian-blue: #021026ff;
+--ink-black: #121726ff;
+--steel-azure: #014E96ff;
+--dodger-blue: #0099FFff;
+--silver: #A8ADAFff;
+--white: #FFFFFFff;
+--midnight-violet: #2E1F2Aff;
+--vintage-grape: #6A4564ff; */
+--oscuro: #021026ff;
+--ink-black: #121726ff;
+--steel-azure: #014E96ff;
+--dodger-blue: #0099FFff;
+--fondo-claro: #A8ADAFff;
+--white: #FFFFFFff;
+--midnight-violet: #2E1F2Aff;
+--fondo-botones: #6A4564ff;
+--border-r:.2rem;
+}
+
+/** General **/
+
+* {
+  margin: 0;
+  padding: 0;
+  /* Evitamos el desbordamiento de los elementos*/
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+  color: var(--ink-black);
+}
+
+h1, h2, h3 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
+
+h1 { font-size: 2.8rem; }
+h2 { font-size: 2.5rem; }
+h3 { font-size: 2.2rem; }
+
+code, pre {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+ul, li {
+  list-style: none;
+}
+
+/** Button **/
+.wrap-button {
+  padding: 1.5rem 0;
+}
+
+.primary-button {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  background-color: var(--fondo-botones);
+  padding: .5rem 1rem;
+  border-radius: 0.5rem;
+  display: inline-block;
+}
+
+/** Header **/
+
+.header-landing{
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  background: var(--fondo-claro);
+  padding: 0.5rem 1rem;
+}
+
+.header-landing img{
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.header-landing h3{
+  font-size: 1.3rem;
+  color: var(--oscuro);
+}
+
+/** Hero Section **/
+
+.hero-section{
+  height: 500px;
+  background-color: var(--oscuro);
+  background: url(img/imagen_principal.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  width: 100%;
+  display: flex;
+  align-items: last baseline;
+}
+
+.wrap-hero-section{
+  max-width: 500px;
+  color: #fff;
+  padding-left: 5%;
+  padding-bottom: 2%;
+}
+
+.wrap-hero-section *{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/** Subject Section **/
+
+/** Info Section **/
+
+/** Form Section **/
+
+/** Footer **/
+
