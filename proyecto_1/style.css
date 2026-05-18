@@ -62,8 +62,8 @@ ul, li {
 }
 
 .primary-button {
-  color: #fff;
-  font-weight: bold;
+  color: var(--white);
+  /*font-weight: bold;*/
   font-size: 1.2rem;
   background-color: var(--fondo-botones);
   padding: .5rem 1rem;
@@ -108,7 +108,7 @@ ul, li {
 
 .wrap-hero-section{
   max-width: 500px;
-  color: #fff;
+  color: var(--white);
   padding-left: 5%;
   padding-bottom: 2%;
 }
