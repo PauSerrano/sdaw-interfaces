@@ -111,11 +111,11 @@ ul, li {
   background-blend-mode: multiply;
   width: 100%;
   display: flex;
-  align-items: last baseline;
+  align-items: end;
 }
 
 .wrap-hero-section{
-  max-width: 500px;
+  max-width: 550px;
   color: var(--white);
   padding-left: 5%;
   padding-bottom: 2%;
@@ -191,4 +191,39 @@ ul, li {
 /** Form Section **/
 
 /** Footer **/
+
+.footer-section{
+  background: var(--fondo-claro);
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.logos-footer-section ul{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.social-logo{
+  max-width: 75px;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.menu-footer-section{
+  padding: 0.5rem 0;
+}
+
+.menu-footer-section ul, 
+.menu-footer-section p{
+  display: flex;
+  justify-content: center;
+  margin: 0.3rem 0;
+}
+
+.menu-footer-section li{
+  padding: 0.5rem;
+}
+
+
 
