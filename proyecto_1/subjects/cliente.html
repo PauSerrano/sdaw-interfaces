@@ -96,8 +96,8 @@
         <ul class="submenu-list">
           <li><a href="#tema1">Tema 1: Introducción a JavaScript</a></li>
           <li><a href="#tema2">Tema 2: Estructuras de control</a></li>
-          <li><a href="#tema3">Tema 3: Funciones</a></li>
-          <li><a href="#tema4">Tema 4: DOM y eventos</a></li>
+          <li><a href="#tema1">Tema 3: Funciones</a></li>
+          <li><a href="#tema2">Tema 4: DOM y eventos</a></li>
         </ul>
       </details>
 
@@ -159,6 +159,169 @@
           </tbody>
         </table>
 
+      </section>
+
+      <section id="tema1" class="tema-section">
+
+        <h2>Contenidos</h2>
+        <h3 class="titulo-tema">Tema 1: Introducción a JavaScript</h3>
+
+        <p class="intro-tema">
+          JavaScript es el lenguaje que permite añadir interactividad y dinamismo a las páginas web.
+          En este primer tema conocerás sus conceptos fundamentales a través de explicaciones breves
+          y ejemplos prácticos.
+        </p>
+
+        <article class="teoria-tema">
+          <h3>1. ¿Qué es JavaScript?</h3>
+          <p>
+            JavaScript es un lenguaje de programación que se ejecuta en el navegador y permite controlar
+            el comportamiento de una página web. Gracias a él podemos responder a eventos, modificar el
+            contenido y crear experiencias interactivas.
+          </p>
+
+          <pre><code>
+  // Mostrar un mensaje en consola
+  console.log("Bienvenido a JavaScript");
+          </code></pre>
+        </article>
+
+        <article class="teoria-tema">
+          <h3>2. Variables: almacenar información</h3>
+          <p>
+            Las variables permiten guardar datos que luego podemos usar o modificar. En JavaScript moderno
+            utilizamos <strong>let</strong> para valores cambiantes y <strong>const</strong> para valores fijos.
+          </p>
+
+          <pre><code>
+  let nombre = "Pau";
+  const curso = "JavaScript básico";
+
+  console.log(nombre, curso);
+          </code></pre>
+        </article>
+
+        <article class="teoria-tema">
+          <h3>3. Tipos de datos básicos</h3>
+          <p>
+            JavaScript trabaja con varios tipos fundamentales: números, textos, booleanos, listas y objetos.
+            Estos tipos permiten representar información de forma flexible.
+          </p>
+
+          <pre><code>
+  let edad = 20;                     // Number
+  let activo = true;                 // Boolean
+  let colores = ["rojo", "azul"];    // Array
+  let usuario = { nombre: "Pau", rol: "alumno" }; // Object
+          </code></pre>
+        </article>
+
+      </section>
+
+      <section id="tema2" class="tema-section">
+
+        <h3 class="titulo-tema">Tema 2: Estructuras de control</h3>
+        <p class="intro-tema">
+          Las estructuras de control permiten decidir qué instrucciones se ejecutan y en qué orden.
+          Gracias a ellas podemos crear programas que reaccionan a condiciones, repiten acciones
+          o recorren colecciones de datos.
+        </p>
+
+        <article class="teoria-tema">
+          <h3>1. Condicional</h3>
+          <p>
+            La estructura <strong>if</strong> permite ejecutar un bloque de código solo si se cumple
+            una condición. Es la forma más básica de tomar decisiones en JavaScript.
+          </p>
+
+          <pre><code>
+  let nota = 7;
+
+  if (nota >= 5) {
+    console.log("Has aprobado");
+  }
+          </code></pre>
+        </article>
+
+        <article class="teoria-tema">
+          <h3>2. Condicional</h3>
+          <p>
+            Cuando queremos ejecutar una acción si la condición se cumple y otra distinta si no se cumple,
+            utilizamos <strong>if...else</strong>.
+          </p>
+
+          <pre><code>
+  let edad = 16;
+
+  if (edad >= 18) {
+    console.log("Eres mayor de edad");
+  } else {
+    console.log("Eres menor de edad");
+  }
+          </code></pre>
+        </article>
+
+        <article class="teoria-tema">
+          <h3>3. Condicional múltiple</code></h3>
+          <p>
+            Cuando existen varias posibilidades, podemos encadenar condiciones usando
+            <strong>else if</strong>.
+          </p>
+
+          <pre><code>
+  let nota = 8;
+
+  if (nota >= 9) {
+    console.log("Sobresaliente");
+  } else if (nota >= 7) {
+    console.log("Notable");
+  } else if (nota >= 5) {
+    console.log("Aprobado");
+  } else {
+    console.log("Suspenso");
+  }
+          </code></pre>
+        </article>
+
+        <article class="teoria-tema">
+          <h3>4. Estructura</h3>
+          <p>
+            <strong>switch</strong> es útil cuando queremos comparar un mismo valor con múltiples casos.
+            Hace el código más limpio que varios <em>else if</em>.
+          </p>
+
+          <pre><code>
+  let dia = 3;
+
+  switch (dia) {
+    case 1:
+      console.log("Lunes");
+      break;
+    case 2:
+      console.log("Martes");
+      break;
+    case 3:
+      console.log("Miércoles");
+      break;
+    default:
+      console.log("Día no válido");
+  }
+          </code></pre>
+        </article>
+
+        <article class="teoria-tema">
+          <h3>5. Bucle</h3>
+          <p>
+            El bucle <strong>for</strong> permite repetir una acción un número determinado de veces.
+            Es ideal para recorrer listas o ejecutar tareas repetitivas.
+          </p>
+
+          <pre><code>
+for (let i = 1; i <= 5; i++) {
+  console.log("Iteración:", i);
+}
+          </code></pre>
+        </article>
       </section>
 
     </main>
