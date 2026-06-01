@@ -50,7 +50,7 @@ ul, li {
 
 /* HEADER */
 .header {
-  background: var(--white);
+  background: var(--fondo-claro);
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -79,5 +79,47 @@ ul, li {
   text-decoration: none;
   display: flex;
   align-items: center;
+  padding: 0.2rem;
 }
 
+.icon:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 10px var(--midnight-violet);
+}
+
+/* ASIGNATURAS (DESPLEGABLE) */
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background: var(--white);
+  border: 1px solid var(--fondo-claro);
+  border-radius: var(--border-r);
+  padding: .5rem 0;
+  min-width: 180px;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: .6rem 1rem;
+  text-decoration: none;
+  color: var(--ink-black);
+}
+
+.dropdown-content a:hover {
+  background: var(--fondo-claro);
+}
+
+.dropdown:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px var(--midnight-violet);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
