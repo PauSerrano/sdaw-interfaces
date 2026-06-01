@@ -123,3 +123,69 @@ ul, li {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+/* CONTENIDO */
+.title-subject {
+  padding: 1rem 0.5rem;
+  background: var(--fondo-claro);
+  text-align: center;
+  border-top: 3px solid var(--midnight-violet)
+}
+
+.layout-grid {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 2rem;
+  /*max-width: 1200px;*/
+  margin: 2rem auto;
+}
+
+/* COLUMNA IZQUIERDA - MENUS */
+.sidebar {
+  background: var(--fondo-claro);
+  padding: 1.5rem;
+  border-radius: var(--border-r);
+  position: sticky;
+  top: 2rem;
+  min-height: 100vh
+}
+
+.submenu {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--midnight-violet);
+  padding-bottom: .5rem;
+}
+
+.submenu summary {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: .4rem 0;
+  list-style: none;
+}
+
+.submenu-list {
+  margin-top: .5rem;
+  padding-left: 1rem;
+  border-left: 3px solid var(--fondo-botones);
+}
+
+.submenu-list li {
+  margin: .3rem 0;
+}
+
+.submenu-list a {
+  text-decoration: none;
+  color: var(--midnight-violet);
+  font-size: .95rem;
+}
+
+.submenu-list a:hover {
+  color: var(--steel-azure);
+}
+
+
+/* COLUMNA DERECHA - CONTENIDOS */
+.content {
+  padding-right: 1rem;
+}
