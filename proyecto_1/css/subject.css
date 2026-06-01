@@ -190,6 +190,38 @@ ul, li {
   padding-right: 1rem;
 }
 
+.content h2 {
+  color: var(--steel-azure);
+}
+
+.content h3{
+  margin-top: 0.8rem;
+}
+
+.tabla-objetivos {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: .95rem;
+}
+
+.tabla-objetivos th {
+  background: var(--fondo-botones);
+  color: var(--white);
+  text-align: left;
+  padding: .6rem;
+}
+
+.tabla-objetivos td {
+  border-bottom: 1px solid var(--fondo-claro);
+  padding: .6rem;
+}
+
+.tabla-objetivos tr:hover td {
+  background: var(--fondo-claro);
+}
+
+
 /** FOOTER **/
 
 .footer-section{
