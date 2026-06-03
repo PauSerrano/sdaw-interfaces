@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Disallow:/img/
+
+Sitemap: https://undominio.com/sitemap.xml

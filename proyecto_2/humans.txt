@@ -1,0 +1,14 @@
+/* TEAM */
+Developer: Pau
+Project: P Code – Plataforma educativa para DAM/DAW
+Module: Diseño de Interfaces Web (DIW) – 2ª Evaluación
+School: IES Abastos
+Year: 2026
+
+/* TECHNOLOGY */
+Framework: Bootstrap 5
+Languages: HTML5, CSS3
+Tools: Visual Studio Code, GitHub
+
+/* THANKS */
+Thanks to: Profesor Roberto
