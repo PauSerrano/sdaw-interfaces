@@ -25,7 +25,7 @@
     <nav class="navbar navbar-expand-sm bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <img src="/proyecto_2/img/logos/logo_P_code_header.png" alt="Logo" width="100" height="auto" class="d-inline-block align-text-top">
+          <img src="img/logos/logo_P_code_header.png" alt="Logo" width="100" height="auto" class="d-inline-block align-text-top">
         </a> 
         
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,8 +37,17 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Inicio</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Asignaturas</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Módulos
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Programación</a></li>
+                <li><a class="dropdown-item" href="#">Entorno Cliente</a></li>
+                <li><a class="dropdown-item" href="#">Entorno Servidor</a></li>
+                <li><a class="dropdown-item" href="#">Despliegue</a></li>
+                <li><a class="dropdown-item" href="#">Diseño de Interfaces</a></li>
+              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Login</a>
@@ -59,7 +68,7 @@
           ¿Necesitas ayuda con algun módulo?
           Aquí encontraras recursos para que tu  
           paso por la formación profesional sea más llevadero.</p>
-          <button type="button" class=" mt-5 btn btn-primary btn-lg">Empieza a aprender</button>
+          <a href="#subject" class="btn btn-primary btn-lg mt-5">Empieza a aprender</a>
         </div>
         <div class="col-12 col-md-6">
         </div>
@@ -75,7 +84,7 @@
       <div class="row">
         <div class="col-md-4 p-5">
           <div class="card border-0">
-            <img src="/proyecto_2/img/subject/img_programacion.png" class="card-img-top rounded-circle" alt="Programación">
+            <img src="img/subject/img_programacion.png" class="card-img-top rounded-circle" alt="Programación">
             <div class="card-body">
               <h5 class="card-title">Programación</h5>
               <a href="#" class="mt-3 btn btn-primary">Empieza ahora</a>
@@ -85,7 +94,7 @@
 
         <div class="col-md-4 p-5">
           <div class="card border-0">
-            <img src="/proyecto_2/img/subject/img_base_datos.png" class="card-img-top rounded-circle" alt="Base de datos">
+            <img src="img/subject/img_base_datos.png" class="card-img-top rounded-circle" alt="Base de datos">
             <div class="card-body">
               <h5 class="card-title">Base de datos</h5>
               <a href="#" class="mt-3 btn btn-primary">Empieza ahora</a>
@@ -95,7 +104,7 @@
         
         <div class="col-md-4 p-5">
           <div class="card border-0">
-            <img src="/proyecto_2/img/subject/img_lenguaje_marcas.png" class="card-img-top rounded-circle" alt="Lenguaje de Marcas">
+            <img src="img/subject/img_lenguaje_marcas.png" class="card-img-top rounded-circle" alt="Lenguaje de Marcas">
             <div class="card-body">
               <h5 class="card-title">Lenguaje de marcas</h5>
               <a href="#" class="mt-3 btn btn-primary">Empieza ahora</a>
@@ -106,7 +115,7 @@
       <div class="row">
         <div class="col-md-4 p-5">
           <div class="card border-0">
-            <img src="/proyecto_2/img/subject/img_interfaces.png" class="card-img-top rounded-circle" alt="Diseño de interfaces">
+            <img src="img/subject/img_interfaces.png" class="card-img-top rounded-circle" alt="Diseño de interfaces">
             <div class="card-body">
               <h5 class="card-title">Diseño de interfaces</h5>
               <a href="#" class="mt-3 btn btn-primary">Empieza ahora</a>
@@ -116,7 +125,7 @@
 
         <div class="col-md-4 p-5">
           <div class="card border-0">
-            <img src="/proyecto_2/img/subject/img_cliente.png" class="card-img-top rounded-circle" alt="Cliente">
+            <img src="img/subject/img_cliente.png" class="card-img-top rounded-circle" alt="Cliente">
             <div class="card-body">
               <h5 class="card-title">Cliente</h5>
               <a href="#" class="mt-3 btn btn-primary">Empieza ahora</a>
@@ -126,7 +135,7 @@
         
         <div class="col-md-4 p-5">
           <div class="card border-0">
-            <img src="/proyecto_2/img/subject/img_sevidor.png" class="card-img-top rounded-circle" alt="Servidor">
+            <img src="img/subject/img_sevidor.png" class="card-img-top rounded-circle" alt="Servidor">
             <div class="card-body">
               <h5 class="card-title">Servidor</h5>
               <a href="#" class="mt-3 btn btn-primary">Empieza ahora</a>
@@ -176,7 +185,7 @@
             <input type="email" class="form-control" id="email" placeholder="name@example.com">
           </div>
           <div class="mb-2">
-            <label for="exampleFormControlInput1" class="form-label">Ciclo</label>
+            <label for="ciclo" class="form-label">Ciclo</label>
             <select class="form-select form-select-sm" aria-label="Small select example">
               <option selected>Seleciona un ciclo</option>
               <option value="dam">DAM</option>
@@ -184,7 +193,7 @@
             </select>
           </div>
           <div class="mb-2">
-            <label for="exampleFormControlInput1" class="form-label">Asignatura</label>
+            <label for="modulo" class="form-label">Módulo</label>
             <select class="form-select form-select-sm" aria-label="Small select example">
               <option selected>Seleciona un módulo</option>
                 <option value="prog">Programación</option>
@@ -208,7 +217,7 @@
               You must agree before submitting.
             </div>
           </div>
-          <div class="text-center mt-5"><a href="#subject" class="btn btn-primary btn-lg mb-2">Elige módulo</a></div>
+          <div class="text-center mt-5"><a href="#" class="btn btn-primary btn-lg mb-2">Enviar</a></div>
         </div>
 
         <div class="col-md-6">
