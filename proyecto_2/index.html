@@ -21,31 +21,33 @@
 <body>
 
   <!-- Cabecera -->
-  <nav class="navbar navbar-expand-sm bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="/proyecto_2/img/logos/logo_P_code_header.png" alt="Logo" width="100" height="auto" class="d-inline-block align-text-top">
-      </a> 
-      
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <header id="header">
+    <nav class="navbar navbar-expand-sm bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="/proyecto_2/img/logos/logo_P_code_header.png" alt="Logo" width="100" height="auto" class="d-inline-block align-text-top">
+        </a> 
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Asignaturas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Login</a>
-          </li>
-        </ul>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Asignaturas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Login</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
 
   <!-- Hero -->
   <section id="hero">
@@ -135,87 +137,96 @@
   </section>
 
   <!-- Información -->
-  <div class="container text-center bg-body-secondary pd-5">
-    <h2 class="py-5">Módulos disponibles</h2>
-    <div class="card mb-3 border-0">
-      <div class="row g-0 bg-body-secondary">
-        <div class="col-md-6">
-          <img src="img/composicion_asignaturas.png" 
-            class="img-fluid rounded-start pb-5" 
-            style="max-width: 400px;" alt="Composición">
-        </div>
-        <div class="col-md-6 text-start">
-          <div class="card-body">
-            <h3 class="card-title">Elige la módulo y trabaja</h3>
-            <p class="card-text">Accede a cualquier módulo y encontrarás teoría resumida, ejemplos prácticos, ejercicios resueltos y pequeños proyectos guiados. Todo está organizado por niveles para que puedas avanzar a tu ritmo.</p>
-            <h3 class="card-title mt-5">Siempre con ayuda</h3>
-            <p>Además, cuentas con el apoyo del profesor para resolver dudas, revisar tus progresos y orientarte en los proyectos. P Code no solo te enseña a programar: te acompaña en el proceso, paso a paso, para que aprendas con confianza y autonomía.</p>
-            <div class="text-center mt-5"><a href="#subject" class="btn btn-primary btn-lg">Elige módulo</a></div>
+  <section id="info">
+    <div class="container text-center bg-body-secondary pd-5">
+      <h2 class="py-5">Módulos disponibles</h2>
+      <div class="card mb-3 border-0">
+        <div class="row g-0 bg-body-secondary">
+          <div class="col-md-6">
+            <img src="img/composicion_asignaturas.png" 
+              class="img-fluid rounded-start pb-5" 
+              style="max-width: 400px;" alt="Composición">
+          </div>
+          <div class="col-md-6 text-start">
+            <div class="card-body">
+              <h3 class="card-title">Elige la módulo y trabaja</h3>
+              <p class="card-text">Accede a cualquier módulo y encontrarás teoría resumida, ejemplos prácticos, ejercicios resueltos y pequeños proyectos guiados. Todo está organizado por niveles para que puedas avanzar a tu ritmo.</p>
+              <h3 class="card-title mt-5">Siempre con ayuda</h3>
+              <p>Además, cuentas con el apoyo del profesor para resolver dudas, revisar tus progresos y orientarte en los proyectos. P Code no solo te enseña a programar: te acompaña en el proceso, paso a paso, para que aprendas con confianza y autonomía.</p>
+              <div class="text-center mt-5"><a href="#subject" class="btn btn-primary btn-lg">Elige módulo</a></div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- Formulario -->
-  <div class="container text-center p-5">
-    <h2 class="py-5">Formaulario de contacto</h2>
-    <div class="row">
-      <div class="col-md-6 text-start">
-        <div class="mb-2">
-          <label for="nombre" class="form-label">Nombre</label>
-          <input type="email" class="form-control" id="nombre" placeholder="Nombre Apellido">
-        </div>
-        <div class="mb-2">
-          <label for="email" class="form-label">Correo electrónico</label>
-          <input type="email" class="form-control" id="email" placeholder="name@example.com">
-        </div>
-        <div class="mb-2">
-          <label for="exampleFormControlInput1" class="form-label">Ciclo</label>
-          <select class="form-select form-select-sm" aria-label="Small select example">
-            <option selected>Seleciona un ciclo</option>
-            <option value="dam">DAM</option>
-            <option value="daw">DAW</option>
-          </select>
-        </div>
-        <div class="mb-2">
-          <label for="exampleFormControlInput1" class="form-label">Asignatura</label>
-          <select class="form-select form-select-sm" aria-label="Small select example">
-            <option selected>Seleciona un módulo</option>
-              <option value="prog">Programación</option>
-              <option value="bd">Base de datos</option>
-              <option value="mar">Lenguaje de marcas</option>
-              <option value="inte">Diseño de interfaces</option>
-              <option value="cli">Cliente</option>
-              <option value="ser">Servidor</option>
-          </select>
-        </div>
-        <div class="mb-2">
-          <label for="mensaje" class="form-label">Example textarea</label>
-          <textarea class="form-control" id="mensaje" rows="3" placeholder="Cuéntame qué necesitas..."></textarea>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-          <label class="form-check-label" for="invalidCheck">
-            Agree to terms and conditions
-          </label>
-          <div class="invalid-feedback">
-            You must agree before submitting.
+  <section id="form">
+    <div class="container text-center p-5">
+      <h2 class="py-5">Formaulario de contacto</h2>
+      <div class="row">
+        <div class="col-md-6 text-start">
+          <div class="mb-2">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="email" class="form-control" id="nombre" placeholder="Nombre Apellido">
           </div>
+          <div class="mb-2">
+            <label for="email" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+          </div>
+          <div class="mb-2">
+            <label for="exampleFormControlInput1" class="form-label">Ciclo</label>
+            <select class="form-select form-select-sm" aria-label="Small select example">
+              <option selected>Seleciona un ciclo</option>
+              <option value="dam">DAM</option>
+              <option value="daw">DAW</option>
+            </select>
+          </div>
+          <div class="mb-2">
+            <label for="exampleFormControlInput1" class="form-label">Asignatura</label>
+            <select class="form-select form-select-sm" aria-label="Small select example">
+              <option selected>Seleciona un módulo</option>
+                <option value="prog">Programación</option>
+                <option value="bd">Base de datos</option>
+                <option value="mar">Lenguaje de marcas</option>
+                <option value="inte">Diseño de interfaces</option>
+                <option value="cli">Cliente</option>
+                <option value="ser">Servidor</option>
+            </select>
+          </div>
+          <div class="mb-2">
+            <label for="mensaje" class="form-label">Example textarea</label>
+            <textarea class="form-control" id="mensaje" rows="3" placeholder="Cuéntame qué necesitas..."></textarea>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">
+              Agree to terms and conditions
+            </label>
+            <div class="invalid-feedback">
+              You must agree before submitting.
+            </div>
+          </div>
+          <div class="text-center mt-5"><a href="#subject" class="btn btn-primary btn-lg mb-2">Elige módulo</a></div>
         </div>
-        <div class="text-center mt-5"><a href="#subject" class="btn btn-primary btn-lg">Elige módulo</a></div>
-      </div>
 
-      <div class="col-md-6">
-        <img src="img/contacto_email.png" 
-          class="img-fluid rounded-start pb-5" 
-          style="max-width: 400px;" alt="Composición">
-          <img src="img/contacto_email_2.png" 
+        <div class="col-md-6">
+          <img src="img/contacto_email.png" 
             class="img-fluid rounded-start pb-5" 
             style="max-width: 400px;" alt="Composición">
+            <img src="img/contacto_email_2.png" 
+              class="img-fluid rounded-start pb-5" 
+              style="max-width: 400px;" alt="Composición">
+        </div>
       </div>
     </div>
-  </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+
+  </footer>
 
   <!-- Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
