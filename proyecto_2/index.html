@@ -158,7 +158,64 @@
   </div>
 
   <!-- Formulario -->
+  <div class="container text-center p-5">
+    <h2 class="py-5">Formaulario de contacto</h2>
+    <div class="row">
+      <div class="col-md-6 text-start">
+        <div class="mb-2">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="email" class="form-control" id="nombre" placeholder="Nombre Apellido">
+        </div>
+        <div class="mb-2">
+          <label for="email" class="form-label">Correo electrónico</label>
+          <input type="email" class="form-control" id="email" placeholder="name@example.com">
+        </div>
+        <div class="mb-2">
+          <label for="exampleFormControlInput1" class="form-label">Ciclo</label>
+          <select class="form-select form-select-sm" aria-label="Small select example">
+            <option selected>Seleciona un ciclo</option>
+            <option value="dam">DAM</option>
+            <option value="daw">DAW</option>
+          </select>
+        </div>
+        <div class="mb-2">
+          <label for="exampleFormControlInput1" class="form-label">Asignatura</label>
+          <select class="form-select form-select-sm" aria-label="Small select example">
+            <option selected>Seleciona un módulo</option>
+              <option value="prog">Programación</option>
+              <option value="bd">Base de datos</option>
+              <option value="mar">Lenguaje de marcas</option>
+              <option value="inte">Diseño de interfaces</option>
+              <option value="cli">Cliente</option>
+              <option value="ser">Servidor</option>
+          </select>
+        </div>
+        <div class="mb-2">
+          <label for="mensaje" class="form-label">Example textarea</label>
+          <textarea class="form-control" id="mensaje" rows="3" placeholder="Cuéntame qué necesitas..."></textarea>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+          <label class="form-check-label" for="invalidCheck">
+            Agree to terms and conditions
+          </label>
+          <div class="invalid-feedback">
+            You must agree before submitting.
+          </div>
+        </div>
+        <div class="text-center mt-5"><a href="#subject" class="btn btn-primary btn-lg">Elige módulo</a></div>
+      </div>
 
+      <div class="col-md-6">
+        <img src="img/contacto_email.png" 
+          class="img-fluid rounded-start pb-5" 
+          style="max-width: 400px;" alt="Composición">
+          <img src="img/contacto_email_2.png" 
+            class="img-fluid rounded-start pb-5" 
+            style="max-width: 400px;" alt="Composición">
+      </div>
+    </div>
+  </div>
 
   <!-- Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
