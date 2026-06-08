@@ -48,6 +48,13 @@ code, pre {
   font-family: 'JetBrains Mono', monospace;
 }
 
+pre {
+    border: 2px solid #333;   /* gris oscuro */
+    border-radius: 6px;
+    padding: 1rem;
+}
+
+
 
 
 
